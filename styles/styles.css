@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans&family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Roboto:wght@300&display=swap');
+
 /*////////////////////////
     Table of Contents
     1. Global Styles
@@ -18,8 +20,13 @@
     margin: 0;
     padding: 0;
 }
+a {
+    text-decoration: none;
+}
 
 /*----------------- 2. Typography ----------------------------------- */
+
+
 
 /* ------------------------------- 3. Layout --------------------------------------- */
 
@@ -43,28 +50,46 @@ Grijs #7A7A7A (voor de service-tegel tekst);*/
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
-.outer-container {
+.header-container {
     display: flex;
     justify-content: center;
     width: 100%;
+    /*max-height: 608px;*/
     margin: 0 auto;
     flex-direction: column;
     align-items: center;
-    height: auto;
+    height: 588px;
 
-    background-color: #4845E4;
+    background: rgb(2,0,36);
+    background: linear-gradient(124deg, rgba(2,0,36,1) 0%, rgba(72,69,228,1) 0%, rgba(87,34,205,1) 78%);
+    /*background-color: #4845E4;*/
 
-    border: 2px solid red;
+    /*border: 2px solid red;*/
 }
-.nav-container {
+ .nav-container {
+     display: flex;
+     width: 80%;
+     max-width: 1200px;
+     min-width: 800px;
+     height:72px;
+     justify-content: flex-end;
+     align-items: center;
+
+     /*border: 2px solid yellow;*/
+ }
+
+.nav-container > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-    width: 100%;
-    height:72px;
-    justify-content: flex-end;
+}
+.nav-container li a {
+    margin: 1.5em;
+    font-family: Roboto, sans-serif;
+    color: white;
+    font-weight: bold;
 
-    align-items: center;
-
-    border: 2px solid yellow;
 }
 
 .inner-container {
@@ -73,16 +98,121 @@ Grijs #7A7A7A (voor de service-tegel tekst);*/
     max-width: 1200px;
     min-width: 800px;
     height: 360px;
+    padding: 64px 10%;
+    text-align: center;
 
     flex-direction: column;
     align-items: center;
 
-    border: 2px solid green;
+    /*border: 2px solid green;*/
 }
 
+.title {
+    font-family: Merriweather, sans-serif;
+    font-size: 2.5em;
+    color: white;
+}
+
+.sub-title {
+    font-family: Roboto, sans-serif;
+    font-size: 1.5em;
+    color: white;
+    margin: 20px 0;
+}
+
+.button {
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.button-primary {
+    background-color: #ED4385;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 24px ;
+    border: 2px solid #ED4385;
+    border-radius: 40px;
+    outline: none;
+}
 .logo-container {
     display: flex;
     flex-direction: column;
+}
+
+.logo-container {
+    margin: 68px 0 0 0;
+    height: 80px;
+    width:64px;
+}
+
+.outer-container2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /*max-height: 608px;*/
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    height: 560px;
+
+    border: 2px solid red;
+}
+
+.inner-container2 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 1200px;
+    min-width: 800px;
+    height: 360px;
+    padding: 0 10%;
+    text-align: center;
+    align-items: center;
+}
+.inner-container2 >  div {
+    font-family: Merriweather, sans-serif;
+    margin: 0 0 20px;
+    font-size: 1.75em;
+    border: 2px solid green;
+    color: #4845E4;
+}
+
+.question {
+    font-family: Merriweather, sans-serif;
+    font-size: 1.25em;
+    color: #4845E4;
+}
+
+.question {
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+}
+
+.article-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    max-width: 1200px;
+    min-width: 800px;
+    height: 90%;
+    padding: 64px 10%;
+    text-align: center;
+
+    align-items: center;
+
+    border: 2px solid green;
+
+}
+
+img {
+    width: 100%;
+}
+
+.image-wrapper {
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
 }
 /* --------------- 4.2 Introduction ------------------- */
 
