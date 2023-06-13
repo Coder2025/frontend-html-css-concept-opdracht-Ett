@@ -207,12 +207,58 @@ Grijs #7A7A7A (voor de service-tegel tekst);*/
 
 img {
     width: 100%;
+
+    border: 2px solid lightpink;
 }
 
 .image-wrapper {
     flex-basis: 800px;
     flex-grow: 0;
     flex-shrink: 1;
+
+}
+
+.service-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 1200px;
+    min-width: 800px;
+    padding: 60px;
+
+    border: 2px solid lightpink;
+}
+
+.service-article {
+    display: flex;
+    flex-direction: column;
+    width: 326px;
+    height: 326px;
+    margin: 16px;
+    text-align: left;
+    align-items: start;
+    overflow-wrap: break-word;
+
+    padding: 30px 30px 35px 30px;
+    border: 2px solid red;
+}
+
+.service-article p {
+    font-family: Roboto sans-serif;
+}
+
+.outer-container3 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+
+    border: 2px solid red;
 }
 /* --------------- 4.2 Introduction ------------------- */
 
